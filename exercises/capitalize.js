@@ -7,6 +7,14 @@
  *
  */
 
+function capitalize(word) {
+    word = word.split("");
+    word[0] = word[0].toUpperCase();
+    for (let i=1; i<word.length; i++) {
+        word[i] = word[i].toLowerCase();
+    }
+    return word = word.join("");
+}
 
 //* Begin of tests
 const assert = require('assert')
