@@ -10,7 +10,15 @@
  */
 
 // Your code :
-
+function min(numberOne, numberTwo) {
+    let value;
+    if (numberOne < numberTwo) {
+        value = numberOne;
+    } else {
+        value = numberTwo;
+    }
+    return value;
+}
 //* Begin of tests
 const assert = require('assert')
 

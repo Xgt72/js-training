@@ -9,6 +9,37 @@
  */
 
 // Your code :
+function multiply(numberOne, numberTwo) {
+    let result = 0;
+    
+    if (numberOne == 0 || numberTwo == 0) {
+        return 0;
+    } else if (numberOne < 0 && numberTwo > 0) {
+        numberOne = Math.abs(numberOne);
+        for (let i = 0; i < numberTwo; i++) {
+            result += numberOne;
+        }
+        return -Math.abs(result);
+    } else if (numberOne > 0 && numberTwo < 0) {
+        numberTwo = Math.abs(numberTwo);
+        for (let i = 0; i < numberOne; i++) {
+            result += numberTwo;
+        }
+        return -Math.abs(result);
+    } else if (numberOne < 0 && numberTwo < 0){
+        numberOne = Math.abs(numberOne);
+        numberTwo = Math.abs(numberTwo);
+        for (let i = 0; i < numberTwo; i++) {
+            result += numberOne;
+        }
+        return result;
+    } else {
+        for (let i = 0; i < numberOne; i++) {
+            result += numberTwo;
+        }
+        return result;
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
