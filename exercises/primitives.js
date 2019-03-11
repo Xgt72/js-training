@@ -8,11 +8,19 @@
  */
 
 // Your code :
+<<<<<<< HEAD
 let str = "1337",
     num = 42,
     bool = false,
     undef = undefined;
     
+=======
+let str = "1337";
+let num = 42;
+let bool = false;
+let undef;
+
+>>>>>>> master
 //* Begin of tests
 const assert = require('assert')
 

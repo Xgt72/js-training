@@ -11,6 +11,10 @@ function id(arg) {
     return arg;
 }
 
+function id (id) {
+    return id;
+}
+
 //* Begin of tests
 const assert = require('assert')
 
